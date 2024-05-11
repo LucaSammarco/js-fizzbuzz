@@ -37,9 +37,7 @@ const ulElement = document.querySelector("ul")
 
     if (i % 3 === 0 && i % 5 === 0) {
         fizzBuzzString += fizzBuzz
-        const liElement = document.createElement("li")
-        liElement.classList.add("list-class")
-        liElement.append(fizzBuzzString)
+     
     }
     else if (i % 3 === 0) {
         fizzBuzzString += fizz
@@ -55,3 +53,16 @@ const ulElement = document.querySelector("ul")
 }
 
 console.log(fizzBuzzString);
+
+
+for (let i = 1; i <= 100; i++) {
+    const liElement = document.createElement("li");
+    
+    if (i % 3 === 0 && i % 5 === 0) {
+        fizzBuzzString += fizzBuzz
+     
+    }
+    
+
+    ulElement.appendChild(liElement);
+}
