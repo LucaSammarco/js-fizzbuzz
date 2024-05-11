@@ -6,7 +6,7 @@
 // }
 
 
-// const ulElement = document.querySelector("ol")
+
 
 // for (let i = 1; i <= 100 ; i++) {
    
@@ -30,21 +30,28 @@ const fizz = " fizz "
 const buzz = " buzz "
 const fizzBuzz = " fizzbuff "
 
+const ulElement = document.querySelector("ul")
 
-   for (let i = 0; i < 100; i++) {
+
+   for (let i = 1; i < 100; i++) {
 
     if (i % 3 === 0 && i % 5 === 0) {
-        fizzBuzzString += i + fizzBuzz
+        fizzBuzzString += fizzBuzz
+        const liElement = document.createElement("li")
+        liElement.classList.add("list-class")
+        liElement.append(fizzBuzzString)
     }
     else if (i % 3 === 0) {
-        fizzBuzzString += i + fizz
+        fizzBuzzString += fizz
     }
     else if (i % 5 === 0) {
-        fizzBuzzString += i + buzz
+        fizzBuzzString += buzz
     }
     else {
         fizzBuzzString += i + " "
     }
+    
+   
 }
 
 console.log(fizzBuzzString);
