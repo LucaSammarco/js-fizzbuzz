@@ -26,18 +26,24 @@
 // }
 
 let fizzBuzzString = ""
-const fizz = "fizz "
-const buzz = "buzz "
-const fizzBuzz = "fizzbuff"
+const fizz = " fizz "
+const buzz = " buzz "
+const fizzBuzz = " fizzbuff "
 
-for (let i = 0; i < 100; i++) {
 
-    if ( i % 3 === 0) {
+   for (let i = 0; i < 100; i++) {
+
+    if (i % 3 === 0 && i % 5 === 0) {
+        fizzBuzzString += i + fizzBuzz
+    }
+    else if (i % 3 === 0) {
         fizzBuzzString += i + fizz
     }
-
-    else {
+    else if (i % 5 === 0) {
         fizzBuzzString += i + buzz
+    }
+    else {
+        fizzBuzzString += i + " "
     }
 }
 
