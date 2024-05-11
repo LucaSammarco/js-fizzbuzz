@@ -25,15 +25,20 @@
 //     console.log(i)
 // }
 
-let rigaConsole = ""
+let fizzBuzzString = ""
 
-for (let i = 0; i < 8 ; i++) {
-    if ( i % 2 === 0) {
-        rigaConsole += "fizz"
-    } else {
+for (let i = 0; i < 10 ; i++) {
+    if ( i % 3 === 0) {
+        fizzBuzzString += "fizz"
+        
+    } else if ( i % 5 === 0) {
         //dispari
-        rigaConsole += "buzz"
+        fizzBuzzString += "buzz"
+    }
+
+    else {
+        fizzBuzzString = "i"
     }
 }
 
-console.log(rigaConsole)
+console.log(fizzBuzzString)
